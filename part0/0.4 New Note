@@ -1,0 +1,28 @@
+title Notes Saving in studies.cs.helsinki.fi/exampleapp/notes
+
+# user submits form
+browser->server: HTTP POST with form data
+
+# server accept the post request and create a new note
+server-->browser: status code: 203 URL REDIRECT to /notes
+
+# browser redirected and get every file it needs
+browser->server: HTTP GET /notes
+server-->browser: HTML-code
+browser->server: HTTP GET main.css
+server-->browser: main.css
+browser->server: HTTP GET main.js
+server-->browser: main.js
+
+note over browser: 
+main.js executes its script 
+and request for data.json
+end note
+
+browser->server: HTTP GET /data.json
+server-->browser: data.json
+
+note over browser:
+event handler executes
+notes is rendered
+end note
