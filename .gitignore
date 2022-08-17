@@ -21,3 +21,25 @@
 /part1/courseinfo/npm-debug.log*
 /part1/courseinfo/yarn-debug.log*
 /part1/courseinfo/yarn-error.log*
+
+# dependencies
+/part1/unicafe/node_modules
+/part1/unicafe/.pnp
+/part1/unicafe.pnp.js
+
+# testing
+/part1/unicafe/coverage
+
+# production
+/part1/unicafe/build
+
+# misc
+/part1/unicafe/.DS_Store
+/part1/unicafe/.env.local
+/part1/unicafe/.env.development.local
+/part1/unicafe/.env.test.local
+/part1/unicafe/.env.production.local
+
+/part1/unicafe/npm-debug.log*
+/part1/unicafe/yarn-debug.log*
+/part1/unicafe/yarn-error.log*
