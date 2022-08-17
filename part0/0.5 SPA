@@ -1,0 +1,24 @@
+title SPA in studies.cs.helsinki.fi/exampleapp/spa
+
+# browser redirected and get every file it needs
+browser->server: HTTP GET /spa
+server-->browser: HTML-code
+browser->server: HTTP GET main.css
+server-->browser: main.css
+browser->server: HTTP GET spa.js
+server-->browser: spa.js
+
+note over browser: 
+spa.js executes its script 
+and request for data.json
+end note
+
+
+browser->server: HTTP GET /data.json
+server-->browser: data.json
+
+note over browser:
+event handler executes
+notes is rendered
+end note
+
