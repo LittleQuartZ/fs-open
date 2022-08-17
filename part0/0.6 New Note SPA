@@ -1,0 +1,12 @@
+title Notes Saving in studies.cs.helsinki.fi/exampleapp/notes
+
+# user submits form
+browser->server: HTTP POST with form data
+
+# server accept the post request and create a new note
+server-->browser: status code: 201 CREATED
+
+# browser append new note element to note list
+note over browser: 
+new note rendered
+end note
